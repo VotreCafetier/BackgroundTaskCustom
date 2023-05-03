@@ -55,9 +55,7 @@ namespace StatusAPI
             _logger.LogInformation("{cacheKey} cache refreshed", _configuration["Cache"]);
         }
 
-        public void RemoveDashboardCache()
-        {
+        public void RemoveDashboardCache() =>
             _cache.Remove(_configuration["Cache"]);
-        }
     }
 }
